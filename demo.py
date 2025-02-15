@@ -5,12 +5,7 @@ import sys
 pygame.init()
 
 # Constants
-WIDTH, HEIGHT = 800, 600
-FPS = 60
-BG_SPEED = 5  # Adjust this value to change scrolling speed
 
-# Colors
-WHITE = (255, 255, 255)
 
 # Create the screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))

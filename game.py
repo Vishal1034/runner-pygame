@@ -10,8 +10,8 @@ def display_score():
 
 def draw_fps():
     fps = int(clock.get_fps())
+    
 
-    # Render the text
     fps_text = test_font.render(f"FPS: {fps}", True, (64,64,64))
     # Draw the text on the screen
     screen.blit(fps_text, (10, 10))
@@ -27,28 +27,10 @@ clock = pygame.time.Clock()
 test_font = pygame.font.Font('font/Pixeltype.ttf', 50)
 game_active = True
 
-sky_surface = pygame.image.load('graphics/Sky.png').convert()
-ground_surface = pygame.image.load('graphics/ground.png').convert()
-BGSPEED = 5
 SKYSPEED = 2
 bgWidth = ground_surface.get_width()
-bgHeight = ground_surface.get_height()
-bg_x = 0
-sky_x = 0
-skyWidth = sky_surface.get_width()
-skyHeight = sky_surface.get_height()
 
-evenFrame = True
-
-snail_surface1 = pygame.image.load('graphics/snail/snail1.png').convert_alpha()
-snail_surface2 = pygame.image.load('graphics/snail/snail2.png').convert_alpha()
-snail_rect = snail_surface1.get_rect(bottomright = (800,300))
-snailSpeed = 6
-
-player_surf = pygame.image.load('graphics/Player/player_walk_1.png').convert_alpha()
-player_surf_walk1 = pygame.image.load('graphics/Player/player_walk_1.png').convert_alpha()
-player_surf_walk2 = pygame.image.load('graphics/Player/player_walk_2.png').convert_alpha()
-player_surf_jump = pygame.image.load('graphics/Player/jump.png').convert_alpha()
+snail_surface1 = pyg').convert_alpha()
 player_rect = player_surf.get_rect(midbottom = (80,300))
 
 currentState = player_surf
@@ -57,8 +39,7 @@ currentWalk = False
 snailWalk = False
 
 player_stand = pygame.image.load('graphics/Player/player_stand.png').convert_alpha()
-player_stand = pygame.transform.rotozoom(player_stand, 0, 2)
-player_stand_rect = player_stand.get_rect(center = (400,200))
+
 
 start_time = 0
 
