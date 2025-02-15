@@ -8,7 +8,6 @@ pygame.init()
 
 
 # Create the screen
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Scrolling Background")
 
 # Load background image
